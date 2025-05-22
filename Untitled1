@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void main()
+{
+    int n1,n2,op;
+    float n3;
+
+    printf("Digite a  operacao:\n (1) Soma\n (2) Subtracao\n (3) Multiplicacao\n (4) Divisao\n");
+    scanf("%d",&op);
+    printf("\nDigite o numero 1: ");
+    scanf("%d",&n1);
+    printf("\nDigite o numero 2: ");
+    scanf("%d",&n2);
+
+    switch(op)
+    {
+        case 1:
+            n3 = n1+n2;
+            break;
+        case 2:
+            n3 = n1-n2;
+            break;
+        case 3:
+            n3 = n1*n2;
+            break;
+        case 4:
+            n3 = n1/n2;
+            break;
+        deafult:
+            printf("Operacao invalida");
+            break;
+    }
+
+    printf("O resultado eh: %.3f", n3);
+}
